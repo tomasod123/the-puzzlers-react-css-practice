@@ -7,10 +7,24 @@ class QuoteList extends Component {
             <div>
                 {QuoteData.map((quoteDetail, index) => {
                     return (
-                        <div>
-                            <h1>{quoteDetail.quote}</h1>;
-                        </div>
+                        <div className="App Flexbox-container">
+                            <div className="TextComponent Flexbox-item-1">
+                                <h1>{quoteDetail.quote}</h1>
+                            </div>
 
+                            <div className="Source">
+                                <h4>
+                                    {quoteDetail.author}{" "}
+                                    <span className="Years">{quoteDetail.lifespan}</span>
+                                </h4>
+                            </div>
+
+                            <div className="TextComponent Flexbox-item-2">
+                                <button className="PlusButton">+</button>
+                                {quoteDetail.votes}
+                                <button className="MinusButton">-</button>
+                            </div>
+                        </div>
                     );
                 })}
             </div>
