@@ -15,6 +15,15 @@
   
   .Flexbox-container {
     margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .Flexbox-item-1 {
+  
+  }
+  
+  .Flexbox-item-2 {
+    
   }
   
   .Source {
